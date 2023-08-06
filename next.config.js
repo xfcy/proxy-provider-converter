@@ -3,7 +3,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 module.exports = withBundleAnalyzer({
-  output: 'export',
   swcMinify: true,
   webpack(config, { dev, isServer }) {
     // Replace React with Preact only in client production build
